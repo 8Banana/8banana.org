@@ -1,7 +1,6 @@
-#!/bin/sh
-set -o nounset 2>/dev/null && :
-set -o pipefail 2>/dev/null && :
-set -o errexit 2>/dev/null && :
+#!/bin/dash
+set -o nounset
+set -o errexit
 
 rm --recursive build 2>/dev/null && :
 echo 'beginning build'
